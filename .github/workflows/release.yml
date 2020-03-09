@@ -1,12 +1,11 @@
-name: Build
+name: Release
 on:
   push:
-    branches:
-    - master
+    branches: [ master ]
 
 jobs:
-  build-gem:
-    name: Build Gem
+  release-gem:
+    name: Release Gem
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
