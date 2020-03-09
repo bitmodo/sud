@@ -13,6 +13,16 @@ Gem::Specification.new do |s|
     s.homepage    = 'https://github.com/bitmodo/sud'
     s.license     = 'MIT'
 
+    s.required_ruby_version     = "~> 2.4", "< 2.7"
+    s.required_rubygems_version = ">= 1.3.6"
+
+    s.add_dependency "i18n", "~> 1.1"
+    s.add_dependency "log4r", "~> 1.1.9", "< 1.1.11"
+
+    s.add_development_dependency "rake", "~> 12.0.0"
+    s.add_development_dependency "rspec", "~> 3.5.0"
+    s.add_development_dependency "rspec-its", "~> 1.3.0"
+
     root_path      = File.dirname(__FILE__)
     all_files      = Dir.chdir(root_path) { Dir.glob("**/{*,.*}") }
     all_files.reject! { |file| [".", ".."].include?(File.basename(file)) }

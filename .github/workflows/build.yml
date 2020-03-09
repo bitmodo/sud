@@ -1,0 +1,17 @@
+name: Build
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Code Checkout
+      uses: actions/checkout@v1
+    - name: Set Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.6'
+    - name: Build Gem
+      run: |
+        gem build *.gemspec

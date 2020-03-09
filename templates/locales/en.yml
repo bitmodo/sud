@@ -1,0 +1,13 @@
+en:
+  sud:
+    errors:
+      sud_version_bad: |-
+        This Sud environment has specified that it requires the Sud
+        version to satisfy the following version requirements:
+          %{requirements}
+        You are running Sud %{version}, which does not satisfy
+        these requirements. Please change your Sud version or update
+        the Sudfile to allow this Sud version. However, be warned
+        that if the Sudfile has specified another version, it probably has
+        good reason to do so, and changing that may cause the environment to
+        not function properly.
