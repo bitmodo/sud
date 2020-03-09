@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
     s.add_dependency "i18n", "~> 1.1"
     s.add_dependency "log4r", "~> 1.1.9", "< 1.1.11"
 
-    s.add_development_dependency "rake", "~> 12.0.0"
+    s.add_development_dependency "rake", ">= 12.3.3"
     s.add_development_dependency "rspec", "~> 3.5.0"
     s.add_development_dependency "rspec-its", "~> 1.3.0"
 
