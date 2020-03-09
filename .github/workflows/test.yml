@@ -12,9 +12,9 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.6'
-    - name: Build Gem
+    - name: Install Gems
       run: |
-        gem build *.gemspec
+        bundle install
     - name: Test Gem
       run: |
         rake test
